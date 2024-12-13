@@ -1,0 +1,32 @@
+lightgbm:
+  objective: "regression"
+  metric: "rmse"
+  boosting_type: "gbdt"
+  num_leaves: 31
+  learning_rate: 0.1
+  feature_fraction: 0.9
+  bagging_fraction: 0.8
+  bagging_freq: 5
+  num_boost_round: 500
+
+xgboost:
+  objective: "reg:squarederror"
+  eval_metric: "rmse"
+  max_depth: 6
+  eta: 0.1
+  colsample_bytree: 0.8
+  subsample: 0.8
+  lambda: 1
+  alpha: 0
+  num_boost_round: 500
+
+catboost:
+  iterations: 500
+  learning_rate: 0.1
+  depth: 6
+  loss_function: "RMSE"
+  bootstrap_type: "Bayesian"
+  bagging_temperature: 1.0
+  l2_leaf_reg: 3.0
+  random_seed: 42
+  verbose: True
