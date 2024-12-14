@@ -8,8 +8,11 @@ The dataset provided in the UM Game Playing: Strength of MCTS Variants Kaggle co
 utility_agent1 = (wins_agent1 − losses_agent1)/total games
 
 Here:
+
 • winsagent1: Total wins by Agent 1,
+
 • lossesagent1: Total losses by Agent 1,
+
 • total games: Total number of games played.
 
 Additionally, the name of the agent strategies were string descriptions that had the following format: MCTS-SELECTION -EXPLORATION CONST -PLAYOUT -SCORE BOUNDS . SELECTION was one of UCB1, UCB1GRAVE, ProgressiveHistory or
